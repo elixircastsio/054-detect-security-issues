@@ -1,0 +1,22 @@
+<h2>Records</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Title</th>
+      <th>Summary</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+  <%= for album <- @albums do %>
+      <tr>
+        <td><%= album.artist %></td>
+        <td><%= album.title %></td>
+        <td><%= album.summary %></td>
+        <td><%= album.year %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
